@@ -20,7 +20,7 @@ namespace WWOC_Desktop_App
         private void MainMenu_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'gROUP4DataSetParts.Parts' table. You can move, or remove it, as needed.
-            this.partsTableAdapter.Fill(this.gROUP4DataSetParts.Parts);
+           
 
         }
     }
