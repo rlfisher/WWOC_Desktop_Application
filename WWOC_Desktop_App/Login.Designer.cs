@@ -42,7 +42,7 @@
             // tbUsername
             // 
             this.tbUsername.Location = new System.Drawing.Point(163, 27);
-            this.tbUsername.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbUsername.Margin = new System.Windows.Forms.Padding(2);
             this.tbUsername.Name = "tbUsername";
             this.tbUsername.Size = new System.Drawing.Size(99, 20);
             this.tbUsername.TabIndex = 0;
@@ -50,7 +50,7 @@
             // tbPassword
             // 
             this.tbPassword.Location = new System.Drawing.Point(163, 68);
-            this.tbPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbPassword.Margin = new System.Windows.Forms.Padding(2);
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.Size = new System.Drawing.Size(99, 20);
             this.tbPassword.TabIndex = 1;
@@ -88,7 +88,7 @@
             // btnLogin
             // 
             this.btnLogin.Location = new System.Drawing.Point(83, 105);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(135, 52);
             this.btnLogin.TabIndex = 5;
@@ -99,7 +99,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(86, 187);
+            this.pictureBox1.Location = new System.Drawing.Point(65, 187);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(176, 146);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -118,7 +118,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tbPassword);
             this.Controls.Add(this.tbUsername);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Login";
             this.Text = "Login";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
