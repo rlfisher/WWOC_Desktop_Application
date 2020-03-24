@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -35,6 +36,29 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.grid_Parts = new System.Windows.Forms.DataGridView();
+            this.partIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemDescDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.costUSDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vendorIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.qtyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.reorderPointDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.exptdLifeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.shipmentTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.locationIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.partsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gROUP4DataSet = new WWOC_Desktop_App.GROUP4DataSet();
+            this.gROUP4DataSetParts = new WWOC_Desktop_App.GROUP4DataSetParts();
+            this.gROUP4DataSetPartsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.partsTableAdapter = new WWOC_Desktop_App.GROUP4DataSetTableAdapters.PartsTableAdapter();
+            this.partsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.partsTableAdapter1 = new WWOC_Desktop_App.GROUP4DataSetPartsTableAdapters.PartsTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_Parts)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.partsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gROUP4DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gROUP4DataSetParts)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gROUP4DataSetPartsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.partsBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -100,11 +124,122 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "checkin checkout in mobile app";
             // 
+            // grid_Parts
+            // 
+            this.grid_Parts.AllowUserToAddRows = false;
+            this.grid_Parts.AllowUserToDeleteRows = false;
+            this.grid_Parts.AutoGenerateColumns = false;
+            this.grid_Parts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grid_Parts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.partIDDataGridViewTextBoxColumn,
+            this.itemDescDataGridViewTextBoxColumn,
+            this.costUSDDataGridViewTextBoxColumn,
+            this.vendorIDDataGridViewTextBoxColumn,
+            this.qtyDataGridViewTextBoxColumn,
+            this.reorderPointDataGridViewTextBoxColumn,
+            this.exptdLifeDataGridViewTextBoxColumn,
+            this.shipmentTimeDataGridViewTextBoxColumn,
+            this.locationIDDataGridViewTextBoxColumn});
+            this.grid_Parts.DataSource = this.partsBindingSource1;
+            this.grid_Parts.Location = new System.Drawing.Point(51, 214);
+            this.grid_Parts.Name = "grid_Parts";
+            this.grid_Parts.ReadOnly = true;
+            this.grid_Parts.Size = new System.Drawing.Size(956, 363);
+            this.grid_Parts.TabIndex = 8;
+            // 
+            // partIDDataGridViewTextBoxColumn
+            // 
+            this.partIDDataGridViewTextBoxColumn.DataPropertyName = "partID";
+            this.partIDDataGridViewTextBoxColumn.HeaderText = "partID";
+            this.partIDDataGridViewTextBoxColumn.Name = "partIDDataGridViewTextBoxColumn";
+            // 
+            // itemDescDataGridViewTextBoxColumn
+            // 
+            this.itemDescDataGridViewTextBoxColumn.DataPropertyName = "itemDesc";
+            this.itemDescDataGridViewTextBoxColumn.HeaderText = "itemDesc";
+            this.itemDescDataGridViewTextBoxColumn.Name = "itemDescDataGridViewTextBoxColumn";
+            // 
+            // costUSDDataGridViewTextBoxColumn
+            // 
+            this.costUSDDataGridViewTextBoxColumn.DataPropertyName = "costUSD";
+            this.costUSDDataGridViewTextBoxColumn.HeaderText = "costUSD";
+            this.costUSDDataGridViewTextBoxColumn.Name = "costUSDDataGridViewTextBoxColumn";
+            // 
+            // vendorIDDataGridViewTextBoxColumn
+            // 
+            this.vendorIDDataGridViewTextBoxColumn.DataPropertyName = "vendorID";
+            this.vendorIDDataGridViewTextBoxColumn.HeaderText = "vendorID";
+            this.vendorIDDataGridViewTextBoxColumn.Name = "vendorIDDataGridViewTextBoxColumn";
+            // 
+            // qtyDataGridViewTextBoxColumn
+            // 
+            this.qtyDataGridViewTextBoxColumn.DataPropertyName = "qty";
+            this.qtyDataGridViewTextBoxColumn.HeaderText = "qty";
+            this.qtyDataGridViewTextBoxColumn.Name = "qtyDataGridViewTextBoxColumn";
+            // 
+            // reorderPointDataGridViewTextBoxColumn
+            // 
+            this.reorderPointDataGridViewTextBoxColumn.DataPropertyName = "reorderPoint";
+            this.reorderPointDataGridViewTextBoxColumn.HeaderText = "reorderPoint";
+            this.reorderPointDataGridViewTextBoxColumn.Name = "reorderPointDataGridViewTextBoxColumn";
+            // 
+            // exptdLifeDataGridViewTextBoxColumn
+            // 
+            this.exptdLifeDataGridViewTextBoxColumn.DataPropertyName = "exptdLife";
+            this.exptdLifeDataGridViewTextBoxColumn.HeaderText = "exptdLife";
+            this.exptdLifeDataGridViewTextBoxColumn.Name = "exptdLifeDataGridViewTextBoxColumn";
+            // 
+            // shipmentTimeDataGridViewTextBoxColumn
+            // 
+            this.shipmentTimeDataGridViewTextBoxColumn.DataPropertyName = "shipmentTime";
+            this.shipmentTimeDataGridViewTextBoxColumn.HeaderText = "shipmentTime";
+            this.shipmentTimeDataGridViewTextBoxColumn.Name = "shipmentTimeDataGridViewTextBoxColumn";
+            // 
+            // locationIDDataGridViewTextBoxColumn
+            // 
+            this.locationIDDataGridViewTextBoxColumn.DataPropertyName = "locationID";
+            this.locationIDDataGridViewTextBoxColumn.HeaderText = "locationID";
+            this.locationIDDataGridViewTextBoxColumn.Name = "locationIDDataGridViewTextBoxColumn";
+            // 
+            // partsBindingSource
+            // 
+            this.partsBindingSource.DataMember = "Parts";
+            this.partsBindingSource.DataSource = this.gROUP4DataSet;
+            // 
+            // gROUP4DataSet
+            // 
+            this.gROUP4DataSet.DataSetName = "GROUP4DataSet";
+            this.gROUP4DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // gROUP4DataSetParts
+            // 
+            this.gROUP4DataSetParts.DataSetName = "GROUP4DataSetParts";
+            this.gROUP4DataSetParts.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // gROUP4DataSetPartsBindingSource
+            // 
+            this.gROUP4DataSetPartsBindingSource.DataSource = this.gROUP4DataSetParts;
+            this.gROUP4DataSetPartsBindingSource.Position = 0;
+            // 
+            // partsTableAdapter
+            // 
+            this.partsTableAdapter.ClearBeforeFill = true;
+            // 
+            // partsBindingSource1
+            // 
+            this.partsBindingSource1.DataMember = "Parts";
+            this.partsBindingSource1.DataSource = this.gROUP4DataSetPartsBindingSource;
+            // 
+            // partsTableAdapter1
+            // 
+            this.partsTableAdapter1.ClearBeforeFill = true;
+            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1253, 670);
+            this.Controls.Add(this.grid_Parts);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
@@ -115,6 +250,12 @@
             this.Name = "MainMenu";
             this.Text = "MainMenu";
             this.Load += new System.EventHandler(this.MainMenu_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.grid_Parts)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.partsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gROUP4DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gROUP4DataSetParts)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gROUP4DataSetPartsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.partsBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -129,5 +270,22 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView grid_Parts;
+        private System.Windows.Forms.BindingSource gROUP4DataSetPartsBindingSource;
+        private GROUP4DataSetParts gROUP4DataSetParts;
+        private GROUP4DataSet gROUP4DataSet;
+        private System.Windows.Forms.BindingSource partsBindingSource;
+        private GROUP4DataSetTableAdapters.PartsTableAdapter partsTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn partIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn itemDescDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn costUSDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn vendorIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn qtyDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn reorderPointDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn exptdLifeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn shipmentTimeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn locationIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource partsBindingSource1;
+        private GROUP4DataSetPartsTableAdapters.PartsTableAdapter partsTableAdapter1;
     }
 }
