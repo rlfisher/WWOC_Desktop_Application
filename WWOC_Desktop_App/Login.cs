@@ -12,7 +12,7 @@ using System.Data.SqlClient;
 
 namespace WWOC_Desktop_App
 {
-    //to use panels or tab control for multiple form selection.
+    //to use panels or tab control for multiple form selection. 
     public partial class Login : Form
     {
         
